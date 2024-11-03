@@ -119,17 +119,19 @@
     padding: 10px 5px 10px 10px;
     
     text-align: center;
-    line-height: 1.2rem;
+    /* line-height: 1.2rem; */
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: #444444;
     font-optical-sizing: auto;
     font-style: normal;    
-    font-size: smaller;
+    
 }
 
 .rule{
     text-align:left;
     margin: 0 0 -10px;
+    padding: 15px 0 0 15px;
+    font-size: smaller;
 }
 
 .rule span{
@@ -139,5 +141,6 @@
 .ruleSuggestion{
     font-size: 1.2rem;   
     text-align: center;
+    padding: 20px 0 0 0;
 }
 

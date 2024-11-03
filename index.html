@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maknun-Web</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    
+    <div class="container" id="container">
+        <img src="back.jpg" alt="background photo" class="bg-main" >
+        <div class="card">
+            <h1>Kursga qabul qilinish qoidalari</h1>
+            <p class="direction-text">Shartnoma shartlari bilan tanishib chiqish uchun quyidagi tugmachani bosing!</p>
+            <button onclick="myFun()">Shartlar!</button>
+        </div>
+    </div>
+
+    <div class="rulebox" id="rulebox">
+        <img src="back.jpg" alt="background photo" class="bg-main" >
+        <div class="ruleboxCard">
+            <p class="rule">
+                <span>1.</span> Darsga doim o’z vaqtida qatnashish; <br>
+                <span>2.</span> Vazifalarni uzrsiz bajarmay qo’ymaslik;<br>
+                <span>3.</span> 3 marta sababsiz, 5 marta sababli dars qoldirganda ogohlantirishsiz guruhdan chetlarishga rozilik;<br>
+                <span>4.</span> Ogohlantirishsiz dars qoldirmaslik;<br>
+                <span>5.</span> 3 dars davomida to’lovni 100% amalga oshirish;<br>
+                <span>6.</span> Har bir dars va ovozni omonat saqlash;<br>
+                <span>7.</span> Berilgan darsliklarni boshqa shaxslarga tarqatmaslik;<br>
+                <span>8.</span> Asossiz ravishda o’quvchi tomonidan dars to’xtatilgan taqdirda to’lov qaytarib berilmaydi.<br>
+                <span>9.</span> Guruhga ishonchsiz va ta’qiqlangan diniy materiallar yubormaslik;<br>
+                <span>10.</span> Guruhga ustoza tomonidan sizga xabar yozilsa javobsiz qoldirmaslik;<br><br>          
+            </p>
+            <p class="ruleSuggestion">
+                Ushbu shartlarga rozi bo’lsangiz “lichka”ga roziman✅ belgisini yuboring!
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script>
+        function myFun(){
+            document.getElementById("container").style.display="none"
+            document.getElementById("rulebox").style.display="flex"
+            console.log("I am pressed"); 
+        }
+    </script>
+
+
+
+
+</body>
+</html>

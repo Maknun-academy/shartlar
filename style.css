@@ -1,0 +1,142 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.bg-main{
+    height: 100vh;
+    width: 100vw;
+    background-size: cover; /* Cover the entire body */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+}
+
+.card{
+    position: absolute;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    height: 50vh;
+    
+    box-shadow: 0 4px 30px rgba(209, 139, 168, 0.8);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    
+    padding-top:60px;
+    
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.card h1 {
+    font-size: 2rem;
+    color: #444444;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.direction-text{
+    font-size: 1rem; 
+    color: #444444; 
+    line-height: 1.6;
+    margin: 10px 0; 
+    padding: 0 15px;
+    text-align: center;
+}
+
+.card button {
+    background-color: #FF69B4;
+    color: #FFFFFF;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card button:hover {
+    background-color: #FF1493;
+    transform: translateY(-2px);
+}
+
+.card button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.5); 
+}
+
+
+/* RULEBOX */
+
+
+
+.rulebox{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ruleboxCard{
+    position: absolute;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    
+    box-shadow: 0 4px 30px rgba(209, 139, 168, 0.8);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    
+    padding: 30px 25px;
+    
+    text-align: center;
+    line-height: 1.5rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #444444;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;    
+}
+
+.rule{
+    text-align:left;
+    margin: 0 0 -10px;
+}
+
+.rule span{
+    font-weight: bold;
+}
+
+.ruleSuggestion{
+    font-size: 1.2rem;   
+    text-align: center;
+}
+

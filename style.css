@@ -1,0 +1,146 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.bg-main{
+    height: 100vh;
+    width: 100vw;
+    background-size: cover; /* Cover the entire body */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+}
+
+.card{
+    position: absolute;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    height: 50vh;
+    
+    box-shadow: 0 4px 30px rgba(209, 139, 168, 0.8);
+
+    display: flex;
+    justify-content: flex-start;
+    
+    padding-top: 60px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+
+    font-family: "Playwrite GB S", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.card h1 {
+    font-size: 2rem;
+    color: #ffffff; /* Set text color to white for contrast */
+    text-align: center; /* Center the text */
+    
+    line-height: 1.5; /* Increase line height for readability */
+    
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Add a subtle shadow for depth */
+
+    color: #FFF;
+}
+
+.direction-text{
+    font-size: 1rem; /* Set a comfortable font size */
+    color: #FFFFFF; /* White text for contrast (or choose another color from previous suggestions) */
+    line-height: 1.6; /* Increase line height for better readability */
+    margin: 10px 0; /* Add some vertical space around the paragraph */
+    padding: 0 15px; /* Add horizontal padding for better spacing */
+    text-align: center; /* Center the text */
+    
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Optional: Add a subtle shadow for depth */
+}
+
+.card button {
+    background-color: #FF69B4; /* Bright pink background for the button */
+    color: #FFFFFF; /* White text for contrast */
+    font-size: 1rem; /* Comfortable font size */
+    padding: 10px 20px; /* Vertical and horizontal padding for size */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Slightly rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+}
+
+.card button:hover {
+    background-color: #FF1493; /* Darker pink on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.card button:focus {
+    outline: none; /* Remove outline on focus */
+    box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.5); /* Add a glow effect on focus */
+}
+
+
+/* RULEBOX */
+
+
+
+.rulebox{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ruleboxCard{
+    /* z-index: 1; */
+    position: absolute;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    /* height: 50vh; */
+    
+    box-shadow: 0 4px 30px rgba(209, 139, 168, 0.8);
+
+    display: flex;
+    justify-content: flex-start;
+    
+    padding: 15px 25px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;    
+}
+
+.rule{
+    text-align:left;
+    margin: 0 0 -10px;
+}
+
+.ruleSuggestion{
+    font-size: 1.2rem;   
+    text-align: center;
+}
+

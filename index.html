@@ -11,23 +11,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <!-- MAIN PAGE -->
-    <div class="container" id="container">
-        <img src="back.jpg" alt="background photo" class="bg-main">
-        <div class="card">
+
+    <!-- PAGE 1 -->
+    <section class="page" id="home">
+        <div class="content-card fadeIn">
             <h1>Kursga qabul qilinish qoidalari</h1>
-            <p class="direction-text">Shartnoma shartlari bilan tanishib chiqish uchun quyidagi tugmachani bosing!</p>
-            <button onclick="myFun()">Shartlar!</button>
+            <p>Shartnoma shartlari bilan tanishib chiqish uchun quyidagi tugmachani bosing!</p>
+            <button onclick="showRules()">Shartlar!</button>
         </div>
-    </div>
+    </section>
 
-    <!-- RULES PAGE -->
-    <div class="rulebox" id="rulebox">
-        <img src="back.jpg" alt="background photo" class="bg-main">
-        <div class="ruleboxCard">
-
-            <p class="rule">
+    <!-- PAGE 2 -->
+    <section class="page hidden" id="rules">
+        <div class="content-card fadeIn">
+            <p class="rules">
                 <span>1.</span> Dars boshlanishidan oldin 1 hafta muddatda 100% to’lovni amalga oshirish; <br>
                 <span>2.</span> 2-oy kurs to’lovini 3 dars davomida to’liq qilishlik;<br>
                 <span>3.</span> Toliba 2-oyda sababsiz guruhdan chiqadigan bo’lsa 50% jarima to’lashlik;<br>
@@ -42,19 +39,27 @@
                 <span>12.</span> 3 marta sababsiz, 5 marta sababli dars qoldirganda ogohlantirishsiz guruhdan chetlarishga rozilik;<br>
             </p>
 
-            <p class="ruleSuggestion">
-                Ushbu shartlarga rozi bo’lsangiz “lichka”ga roziman ✅ belgisini yuboring!
+            <p class="rule-confirm">
+                Ushbu shartlarga rozi bo’lsangiz quyidagi tugmachani bosing 👇
             </p>
-        </div>
-    </div>
 
-    <!-- SCRIPT -->
-    <script>
-        function myFun() {
-            document.getElementById("container").style.display = "none";
-            document.getElementById("rulebox").style.display = "flex";
-        }
-    </script>
+            <!-- TELEGRAM CONFIRM BUTTON -->
+            <a 
+                href="https://t.me/maknoonmanager?text=Shartlarga%20roziman%20%E2%9C%85" 
+                class="confirm-btn"
+                target="_blank"
+            >
+                Roziman ✅
+            </a>
+        </div>
+    </section>
+
+<script>
+function showRules() {
+    document.getElementById("home").classList.add("hidden");
+    document.getElementById("rules").classList.remove("hidden");
+}
+</script>
 
 </body>
 </html>

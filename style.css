@@ -1,106 +1,127 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    overflow-x: hidden;
+body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: url("back.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
-/* BACKGROUND */
-.bg-main{
+/* Fullscreen Sections */
+.page {
     width: 100%;
-    height: 100%;
-    position: fixed; 
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    z-index: -1;
-}
-
-/* MAIN CONTAINER */
-.container, .rulebox{
-    width: 100%;
-    min-height: 100vh; /* adjusts with content */
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;     /* prevents edge cut text */
+    padding: 20px;
 }
 
-/* CARD */
-.card, .ruleboxCard{
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(15px);
+.hidden {
+    display: none;
+}
+
+/* Main Card */
+.content-card {
+    background: rgba(255, 255, 255, 0.12);
+    padding: 30px 20px;
     width: 100%;
     max-width: 550px;
-    border-radius: 12px;
-    padding: 40px 20px;
-    box-shadow: 0 4px 30px rgba(209, 139, 168, 0.8);
-}
-
-/* TEXT */
-.card h1 {
-    font-size: 1.6rem;
-    color: #444;
-    margin-bottom: 10px;
-}
-
-.direction-text{
-    color: #444;
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-
-.rule {
-    font-size: 0.95rem;
-    line-height: 1.4rem;
-}
-
-.rule span {
-    font-weight: bold;
-}
-
-.ruleSuggestion{
-    font-size: 1.15rem;
-    margin-top: 20px;
+    border-radius: 16px;
+    backdrop-filter: blur(18px);
+    box-shadow: 0 8px 35px rgba(255, 105, 180, 0.4);
     text-align: center;
+    color: #333;
 }
 
-/* BUTTON */
-.card button {
-    background-color: #FF69B4;
-    color: white;
-    padding: 12px 24px;
+/* Title */
+.content-card h1 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+
+/* Buttons */
+button {
+    margin-top: 18px;
+    padding: 12px 26px;
+    background-color: #ff69b4;
     border: none;
-    border-radius: 6px;
-    cursor: pointer;
+    color: white;
     font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
     transition: 0.2s ease;
 }
 
-.card button:hover{
-    background-color: #FF1493;
+button:hover {
+    background-color: #ff1493;
+    transform: translateY(-2px);
 }
 
-/* RESPONSIVENESS */
+/* Rules Text */
+.rules {
+    text-align: left;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+.rules span {
+    font-weight: bold;
+}
+
+.rule-confirm {
+    margin-top: 20px;
+    font-size: 1.15rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* TELEGRAM BUTTON */
+.confirm-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 26px;
+    background-color: #32CD32;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    transition: 0.2s ease;
+}
+
+.confirm-btn:hover {
+    background-color: #2eb82e;
+    transform: translateY(-2px);
+}
+
+/* Fade Animation */
+.fadeIn {
+    animation: fade .6s ease-out;
+}
+
+@keyframes fade {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Fixes */
 @media (max-width: 480px) {
-    .card, .ruleboxCard {
-        padding: 30px 15px;
+    .content-card {
+        padding: 25px 15px;
     }
 
-    .card h1 {
-        font-size: 1.3rem;
-    }
-
-    .rule {
+    .rules {
         font-size: 0.9rem;
         line-height: 1.35rem;
     }
 
-    .ruleSuggestion {
-        font-size: 1rem;
+    h1 {
+        font-size: 1.4rem !important;
     }
 }
